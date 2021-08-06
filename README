@@ -1,3 +1,5 @@
+This is an interactive CLI-based Taxonomy for a KB of the general ALC-based description logic.
+
 Reviewing dag, revDag and ext
 
 	cout << "printing ext" << endl;

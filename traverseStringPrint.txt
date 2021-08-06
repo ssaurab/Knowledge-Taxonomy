@@ -1,0 +1,36 @@
+void traverseStringPrint(Node* root,int n, string &s){
+    transform(root->type.begin(), root->type.end(), root->type.begin(), ::toupper);
+    if(root->type=="EXISTS"){
+        cout << "["<<root->type << " " << root->name << " " << root->number <<"] ";
+        s+="["+root->type + " " + root->name + " " + to_string(root->number) +"] ";
+    }else if(root->type=="FILLS"){
+        cout<< "[" << root->type << " " << root->name << " " << root->constant << "] ";
+        s+="[" + root->type + " " + root->name + " " + root->constant + "] ";
+    }else if(root->type=="CONCEPT"){
+        cout << " "<<root->name;
+        s+=" "+root->name;
+    }
+    else if(root->type=="ALL"){
+        cout << "[" << root->type << " ";
+        s+="[" + root->type + " ";
+        cout << root->name << " ";
+        s+=root->name + " ";
+        for(int i=0;i<root->children.size();i++){
+            // for(int j=0;j<n;j++) cout << "\t";
+            traverseStringPrint(root->children[i],n+1,s);
+        }
+        cout << "]";
+        s+="]";
+    }
+    else{
+        cout << "[" << root->type << " ";
+        s+="[" + root->type + " ";
+        
+        for(int i=0;i<root->children.size();i++){
+            // for(int j=0;j<n;j++) cout << "\t";
+            traverseStringPrint(root->children[i],n+1,s);
+        }
+        cout << "]";
+        s+="]";
+    }
+}

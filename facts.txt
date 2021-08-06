@@ -1,0 +1,15 @@
+michelle->Doctor 
+marc->Nurse 
+michelle->ExpSeniorDoctor 
+marc->GradNursewExpSenior 
+marc->Vehicle 
+marc->Wheeler 
+marc->Wheeler4 
+michelle->Experienced 
+michelle->Ambulance 
+natasha->[AND Staff [FILLS :WorksAt admindept][FILLS :WorksAt tdept][FILLS :Experience decade][ALL :Drives Ambulance][FILLS :Eats nearbyhotel]] 
+natasha->[AND Staff [ALL :Degree Medical][ALL :Degree Nursing][FILLS :WorksAt medicaldept][EXISTS 1 :ReportsTo][ALL :ReportsTo [AND Staff [FILLS :Experience decade]]]] 
+natasha->[AND Vehicle [EXISTS 1 :WheelSystem][FILLS :WheelSystem quadraple]] 
+alvarez->[AND Staff [ALL :Degree Nursing][FILLS :WorksAt medicaldept][EXISTS 1 :Expertise][FILLS :Experience decade]] 
+alvarez->[AND [EXISTS 1 :Married][ALL :Married [AND [EXISTS 2 :FinedBy][ALL :FinedBy [AND [ALL :Loves EmergencyDriver][FILLS :Loves adam]]]]]] 
+johnson->[AND [FILLS :LivesWith chris][ALL :LivesWith [AND [EXISTS 5 :GetsAlong][ALL :GetsAlong [AND [FILLS :Likes latesttech][ALL :Likes [AND Vehicle Wheeler3]]]]]]] 

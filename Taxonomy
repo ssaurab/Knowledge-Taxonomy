@@ -1,0 +1,51 @@
+digraph {
+	size="9,9"
+	A [label=Thing]
+	B [label=Staff]
+	C [label=MedicalStaff]
+	D [label=Experienced]
+	E [label=AdminStaff]
+	F [label=Vehicle]
+	G [label=Doctor]
+	H [label=Nurse]
+	I [label=TransportStaff]
+	J [label=EmergencyDriver]
+	K [label=HRDStaff]
+	L [label=Ambulance]
+	M [label=Wheeler]
+	N [label=Wheeler3]
+	O [label=Wheeler4]
+	P [label=SeniorDoctor]
+	Q [label=AsstDoctor]
+	R [label=SatffNurse]
+	S [label=GraduateNurse]
+	T [label=ExpSeniorDoctor]
+	U [label=AsstDoctorwExpSenior]
+	V [label=ExpStaffNurse]
+	W [label=GradNursewExpSenior]
+	A -> B
+	A -> F
+	B -> C
+	B -> E
+	B -> D
+	C -> G
+	C -> H
+	F -> L
+	F -> M
+	M -> N
+	M -> O
+	E -> I
+	E -> K
+	I -> J
+	D -> J
+	D -> T
+	D -> V
+	G -> P
+	G -> Q
+	H -> R
+	H -> S
+	P -> T
+	Q -> U
+	R -> V
+	S -> W
+}

@@ -1,0 +1,45 @@
+Reviewing dag, revDag and ext
+
+	cout << "printing ext" << endl;
+	printing(ext);
+	cout << "printing dag" << endl;
+	printing(dag);
+	cout << "printing revDag" << endl;
+	printing(revDag);
+	
+
+1) find all individuals in a concept
+
+	string concept="Thing";
+	set<string> individuals = findAllIndividuals(dag,ext,visited,concept);
+	for(set<string>::iterator it=individuals.begin();it!=individuals.end();it++)
+		cout << *it << " ";
+	cout << endl;
+
+2) find all the concepts an individual belongs to
+
+	string individual = "Eve";
+	set<string> concepts = findAllConcepts(revDag,ext,visited,individual);
+	for(set<string>::iterator it=concepts.begin();it!=concepts.end();it++)
+		cout << *it << " ";
+	cout << endl;
+
+3) check if individual belongs to an concept
+	
+	individual="Eve";concept="Thing";
+	concepts = findAllConcepts(revDag,ext,visited,individual);
+	set<string>::iterator it = find(concepts.begin(),concepts.end(),concept);
+	if(it!=concepts.end())
+		cout << "Yes" << endl;
+	else
+		cout << "No" << endl;
+
+4) Adding Simple facts..format ex:- Eve->Doctor (no spaces)
+	
+	string individual="Eve",concept="Doctor";
+	addSimpleFact(dag,revDag,msc,visited,individual,concept);
+
+
+
+
+	

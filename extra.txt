@@ -1,0 +1,17 @@
+[
+	AND
+		
+		Ford
+		Ford
+		Ferrari
+		[ALL :Worker Ford]
+		[EXISTS 2 :Worker]
+		[ALL :Worker [AND Ford Ferrari]]
+		Ferrari
+		Ferrari
+		Ford
+]
+
+flipkart->[AND [AND Company [ALL :Founder CEO]] [AND Company [ALL :Founder CEO][EXISTS 2 :Founder][EXISTS 5 :ProgressiveInclination]]]
+
+jeff->[AND Person [FILLS :From usa]]

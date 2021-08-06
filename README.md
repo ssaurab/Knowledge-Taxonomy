@@ -12,7 +12,7 @@ We also support addition of facts on the go and that will update the place of in
 
 We have a pre-loaded hospital taxonomy in our submission, which can be directly interacted from CLI after running make. 
 
-![The Hospital Taxonomy][https://github.com/SaurabSirpurkar/KRR_Project/blob/main/Taxonomy.png]
+![The Hospital Taxonomy](https://github.com/SaurabSirpurkar/KRR_Project/blob/main/Taxonomy.png)
 
 
 	

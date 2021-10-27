@@ -1,3 +1,7 @@
+**To Run:**<br>
+Run make in the directory to run on default conceptDefinition and fact paths. To customize, look into input formats in the A and Tboxes and change the path specifications in the make file to match these new input paths. 
+
+
 This is an interactive CLI-based Taxonomy for a KB of the general, ALC-based, description logic. It can also generate .png files showing the taxonomy at any given moment using a python-based image generation of graphs.  
 
 We solve the problem of taking in a set of concept definitions, which forms the Tbox, and use it to built the taxonomy. 

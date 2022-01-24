@@ -1,5 +1,3 @@
-**To Run:**<br>
-Run make in the directory to run on default conceptDefinition and fact paths. To customize, look into input formats in the A and Tboxes and change the path specifications in the make file to match these new input paths. 
 
 
 This is an interactive CLI-based Taxonomy for a KB of the general, ALC-based, description logic. It can also generate .png files showing the taxonomy at any given moment using a python-based image generation of graphs.  
@@ -9,6 +7,10 @@ Later on, we take in the taxonomy and the Tbox along with the collection of give
 
 ![The Assignment Structure](https://github.com/SaurabSirpurkar/KRR_Project/blob/main/Flow.png)
 
+### To Run:
+Run `make` in the directory to run on default conceptDefinition and fact paths. To customize, look into input formats in A and Tboxes and change the path specifications in the make file to match these new input paths. 
+
+### Theory
 
 Upon input of an individual, we always place them in the Abox under the most specific concept of which they are instances of. 
 Additionally, we support three kinds of queries which are:

@@ -5,7 +5,7 @@ This is an interactive CLI-based Taxonomy for a KB of the general, ALC-based, de
 We solve the problem of taking in a set of concept definitions, which forms the Tbox, and use it to built the taxonomy. 
 Later on, we take in the taxonomy and the Tbox along with the collection of given facts (which forms the Abox), and support the queries and edits as given below.
 
-![The Assignment Structure](https://github.com/SaurabSirpurkar/KRR_Project/blob/main/Flow.png)
+![The Assignment Structure](https://github.com/ssaurab/KRR_Project/blob/main/Flow.png)
 
 ### To Run:
 Run `make` in the directory to run on default conceptDefinition and fact paths. To customize, look into input formats in A and Tboxes and change the path specifications in the make file to match these new input paths. 
@@ -22,7 +22,7 @@ We also support addition of facts on the go that will update the place of indivi
 
 We have a pre-loaded hospital taxonomy in our submission and this can be directly interacted from CLI after running make. To continue over this taxonomy, please understand the given ABox and TBox by going through facts.txt and conceptDefinitions.txt respectively.
 
-![The Hospital Taxonomy](https://github.com/SaurabSirpurkar/KRR_Project/blob/main/Taxonomy.png)
+![The Hospital Taxonomy](https://github.com/ssaurab/KRR_Project/blob/main/Taxonomy.png)
 
 
 	
